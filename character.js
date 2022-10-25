@@ -8,11 +8,14 @@ function Character(x,y,w,h){
   
   this.display = function(){
     this.img.resize(this.w , this.h);
+    image(this.img,this.x,this.y)
     if(keyIsDown(37)){
       this.x -= 5;
+      console.log("test")
     }//end if
-    if(keyIsDown(36)){
+    if(keyIsDown(39)){
       this.x += 5;
     }
+    
   }//end display
 }//end character
